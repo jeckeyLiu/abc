@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.abc.dao.ConsumerDao">      
+    <select id="getAll" resultType="com.abc.model.Consumer">  
+        select id, name , gender from consumer where deleted=0   
+    </select>  
+    
+    <select id="get" resultType="com.abc.model.Consumer">
+    	select id,name,gender from consumer where deleted=0 and id=#{id}
+    </select>
+</mapper> 

@@ -31,7 +31,8 @@
         </property>  
     </bean>  
     
-       <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+    <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="viewClass" value="com.abc.velocity.ExtendedVelocityView" />
         <property name="cache" value="false"/>
         <property name="order" value="1"/>
         <property name="suffix" value=".vm"/>

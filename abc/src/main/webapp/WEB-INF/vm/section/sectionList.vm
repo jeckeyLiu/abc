@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模块列表</title>
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/flat-ui.css">
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/base.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<video class="video-js" preload="auto" controllers poster="../img/5.jpg" data-setup="{}">
+			  <source src="http://source.cc.highso.com.cn/flvs/ca/QxBKK/mpnnCesAy-2.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="$SERVER_CONTEXT/js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/video.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/flat-ui.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/section/sectionList.js"></script>
+<script type="text/javascript">
+	var SERVER_CONTEXT = "$SERVER_CONTEXT";
+    // videojs.options.flash.swf = "$SERVER_CONTEXT/swf/video-js.swf";
+</script>
+</body>
+</html>
