@@ -9,7 +9,6 @@
 <link href="" rel="stylesheet">
 </head>
 <body>
-    this is a test! 
-    hello world!!!
+    $!{content}
 </body>
 </html>
