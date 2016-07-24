@@ -3,38 +3,289 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>章节列表</title>
+<title>模块列表</title>
 <link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/flat-ui.css">
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/base.css">
-
+<style type="text/css">
+	#circle { 
+	    width:0px;
+  	    height:0px;
+		border-width:30px;
+		border-style:solid;
+		border-color:rgb(212,227,204);
+		background-color:transparent;
+		transform:rotate(-45deg);
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-o-transform:rotate(-45deg);
+		border-radius:50%; 
+		margin-top: -16px;
+	}
+	#circle1 { 
+	    width:70px;
+  	    height:70px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#E2E2E2 #E2E2E2 #E2E2E2 #E2E2E2;
+		background-color: #fff;
+		border-radius:50%; 
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -24px;
+		z-index: 1;
+	}
+	.al-center{
+		text-align: center;
+	    text-align: -webkit-center;
+	}
+	.bottom{
+		position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 2;
+        height: 55px;
+	}
+	.bottom1{
+		position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: #fff;
+        border: solid 2px #E2E2E2;
+        height: 56px;
+	}
+	.bottom .text{
+		font-size:12px;
+		word-break:keep-all;
+	}
+	.bottom .img{
+		font-size:22px;
+	}
+	.bottom .cell span{
+		float: left;
+		width: 100%;
+		margin-top: 5px;
+	}
+	.bottom .border{
+	    border-width: 1px;
+	    border-style: solid;
+	    border-color: transparent transparent #a2a1a2 transparent;
+	    float: left;
+	    width: 100px;
+	    height: 32px;
+	}
+	.head{
+		background-color:  rgb(113,161,87);
+		padding: 10px;
+		position: fixed;
+		top:0px;
+		height: 75px;
+		width:100%;
+		z-index: 1;
+	}
+	.course{
+		margin-top:75px;
+		margin-bottom:56px;
+	}
+	.course .row{
+	    border-style: solid;
+	    border-width: 1px;
+        border-color: transparent transparent #ddd transparent;
+        padding: 10px;
+	}
+	.course .img{
+		padding-left:5px;
+		padding-right:0px;
+	}
+	.course ul{
+		list-style-type: none;
+		padding-left:0px;
+	}
+	.course ul li{
+		display: inline;
+	}
+	.course ul li .duration{
+		font-size:10px;
+	}
+	.course ul li .operator{
+	    float: right;
+    	padding: 3px;
+    	width: 35%;
+    	height: 25px;
+    	border-radius: 15%/50%;
+    	background-color: rgb(113,161,87);
+	}
+	.course ul li .operator em{
+        background-color:  rgb(113,161,87);
+        color: #fff;
+	    border-style: solid;
+	    border-width: 1px;
+	    border-radius: 50%;
+	    text-align: center;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	}
+	.course ul li .captchaName{
+		font-size: 15px;
+	}
+	.head .title{
+	   text-align: center;
+       font-size: 30px;
+	}
+	.head .reg{
+	   float: right;
+       margin-right: 45px;
+       margin-top: -25px;
+       font-size:16px;
+	}
+	.head .login{
+	   float: right;
+   	   margin-right: 20px;
+       margin-top: -25px;
+       font-size:16px;
+	}
+</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container head">
 		<div class="row">
-			<div data="1" class="moduleDiv">
+			<div class="title">首页</div>
+			<div class="reg glyphicon glyphicon-registration-mark"></div>
+			<div class="login glyphicon glyphicon-user"></div>
+		</div>
+	</div>
+	<div class="container course">
+		<div class="row">
+			<div class="col-xs-3 img">
 				<img class="img-responsive" src="$SERVER_CONTEXT/img/5.jpg">
 			</div>
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
+			</div>
 		</div>
 		<div class="row">
-			<div data="2" class="moduleDiv">
+			<div class="col-xs-3 img">
 				<img class="img-responsive" src="$SERVER_CONTEXT/img/6.jpg">
 			</div>
-		</div>
-		<div class="row">
-			<div data="3" class="moduleDiv">
-				<img class="img-responsive" src="$SERVER_CONTEXT/img/7.jpg">
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div data="4" class="moduleDiv">
+			<div class="col-xs-3 img">
+				<img class="img-responsive" src="$SERVER_CONTEXT/img/7.jpg">
+			</div>
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 img">
 				<img class="img-responsive" src="$SERVER_CONTEXT/img/8.jpg">
+			</div>
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 img">
+				<img class="img-responsive" src="$SERVER_CONTEXT/img/5.jpg">
+			</div>
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 img">
+				<img class="img-responsive" src="$SERVER_CONTEXT/img/6.jpg">
+			</div>
+			<div class="col-xs-9">
+				<ul>
+					<li><span class="captchaName"><strong>如何设计一个好的产品</strong></span></li>
+				</ul>
+				<ul>
+					<li><span>如何设计一个好的产品</span></li>
+				</ul>
+				<ul>
+					<li><span class="duration">1小时24分钟</span></li>
+					<li><span class="operator"><em class="glyphicon glyphicon-plus"></em>马上加入</span></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	
+	<div class="container bottom">
+		<div class="row al-center">
+			<div class="col-xs-2 cell">
+				<span class="img glyphicon glyphicon-eye-open"></span><span class="text">发现</span>
+			</div>
+			<div class="col-xs-2 cell">
+				<span class="img glyphicon glyphicon-download"></span><span class="text">下载</span>
+			</div>
+			<div class="col-xs-4">
+				<div id="circle"></div>
+			</div>
+			<div class="col-xs-2 cell">
+				<span class="img glyphicon glyphicon-folder-open"></span><span class="text">课程</span>
+			</div>
+			<div class="col-xs-2 cell">
+				<span class="img glyphicon glyphicon-user"></span><span class="text">我的</span>
+			</div>
+		</div>
+	</div>
+	<div class="container bottom1">
+		<div class="row">
+			<div id="circle1"></div>
+		</div>
+	</div>
 <script type="text/javascript" src="$SERVER_CONTEXT/js/jquery.1.11.3.min.js"></script>
-<script type="text/javascript" src="$SERVER_CONTEXT/js/flat-ui.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="$SERVER_CONTEXT/js/module/getAll.js"></script>
 <script type="text/javascript">
 	var SERVER_CONTEXT =  "$SERVER_CONTEXT";
