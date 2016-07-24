@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模块列表</title>
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/base.css">
+<link rel="stylesheet" type="text/css" href="$SERVER_CONTEXT/css/video-js.css">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<video id="videoDiv" class="video-js" preload="auto" style="width:100%;">
+			</video>
+		</div>
+		<ul id="myTab" class="nav nav-tabs">
+		   <li class="active"><a href="#list" data-toggle="tab">列表</a></li>
+		   <li><a href="#appraise" data-toggle="tab">评价</a></li>
+		   <li><a href="#reward" data-toggle="tab">打赏</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+		   <div class="tab-pane in active" id="list">
+		      <h5>第一章</h5>
+		      <p style="margin-left:20px;">第一节：如何成为一个牛逼的创业者</p>
+		      <p id="msg">123</p>
+		   </div>
+		   <div class="tab-pane" id="appraise">
+		      <p>这个视频不错</p>
+		   </div>
+		   <div class="tab-pane" id="reward">
+		      <p>您的肯定是我们最大的收获！</p>
+		   </div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="$SERVER_CONTEXT/js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/video.js"></script>
+<script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+<script type="text/javascript" src="$SERVER_CONTEXT/js/section/sectionList.js"></script>
+
+<script type="text/javascript">
+	var SERVER_CONTEXT = "$SERVER_CONTEXT";
+</script>
+</body>
+</html>

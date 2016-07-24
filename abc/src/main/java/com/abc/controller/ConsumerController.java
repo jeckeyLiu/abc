@@ -24,4 +24,28 @@ public class ConsumerController {
 		model.addAttribute("consumer", consumer);
 		return "consumer";
 	}
+	
+	@RequestMapping("/login")
+	public String login(HttpServletRequest request,Model model){
+		Long id = request.getParameter("id")!=null && request.getParameter("id")!=""?Long.valueOf(request.getParameter("id")):0l;
+		Consumer consumer = consumerService.get(id);
+		model.addAttribute("consumer", consumer);
+		return "consumer";
+	}
+	
+	@RequestMapping("/regist")
+	public String regist(HttpServletRequest request,Model model){
+		Long id = request.getParameter("id")!=null && request.getParameter("id")!=""?Long.valueOf(request.getParameter("id")):0l;
+		Consumer consumer = consumerService.get(id);
+		model.addAttribute("consumer", consumer);
+		return "consumer";
+	}
+	
+	@RequestMapping("/logout")
+	public String logout(HttpServletRequest request,Model model){
+		Long id = request.getParameter("id")!=null && request.getParameter("id")!=""?Long.valueOf(request.getParameter("id")):0l;
+		Consumer consumer = consumerService.get(id);
+		model.addAttribute("consumer", consumer);
+		return "consumer";
+	}
 }

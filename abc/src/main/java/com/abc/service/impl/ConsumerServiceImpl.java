@@ -20,7 +20,6 @@ public class ConsumerServiceImpl implements ConsumerService {
 		return consumerDao.getALL();
 	}
 
-	@Override
 	public Consumer get(Long id) {
 		return consumerDao.get(id);
 	}
